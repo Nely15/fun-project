@@ -272,7 +272,10 @@ section {
 }
 
 .gift-price {
+    display: block;
+    margin: 0.75rem 0;
     color: var(--plum);
+    font-size: 1.35rem;
     font-weight: 700;
 }
 
@@ -738,4 +741,75 @@ footer p + p {
 
 .skip-link:focus {
     top: 1rem;
+}
+
+/* Make gift prices visible on every card */
+.gift-card-content .gift-price {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    width: 100%;
+    margin: 0.75rem 0;
+    padding: 0.5rem 0;
+    color: var(--plum);
+    background-color: var(--white);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* Clean gift card layout */
+.gift-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #ead6d9;
+    border-radius: 0.65rem;
+    background-color: var(--white);
+    box-shadow: 0 4px 14px rgb(74 44 64 / 7%);
+}
+
+.gift-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.gift-card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.1rem;
+}
+
+.gift-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    line-height: 1.35;
+}
+
+.gift-card .gift-price {
+    margin: 0.25rem 0 1rem;
+    color: var(--plum);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.gift-card .gift-details {
+    width: 100%;
+    margin-top: auto;
+    background-color: var(--plum);
+    border-color: var(--plum);
+    color: var(--white);
+}
+
+.gift-card .gift-details:hover,
+.gift-card .gift-details:focus-visible {
+    background-color: var(--rose);
+    border-color: var(--rose);
+    color: var(--plum);
 }

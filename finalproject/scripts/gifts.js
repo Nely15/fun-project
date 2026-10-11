@@ -39,21 +39,19 @@ function restoreFilters() {
 }
 
 //Save the selected filters for the next visit.
-function savedFilters() {
-
+function saveFilters() {
     try {
-        localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify({
+        localStorage.setItem(
+            "signatureGiftFilters",
+            JSON.stringify({
                 occasion: occasionFilter.value,
                 recipient: recipientFilter.value,
                 budget: budgetFilter.value
-
-            }));
-
+            })
+        );
     } catch (error) {
-
         console.error("Unable to save filters:", error);
     }
-
 }
  
 // Fetch gift data from the local JSON file
@@ -122,7 +120,7 @@ function displayGifts(giftList) {
         detailsButton.dataset.id = gift.id;
         detailsButton.textContent = "View Details";
 
-        content.append(title, description, recipient, occasion, category, price, detailsButton);
+        content.append(title, price, detailsButton);
         card.append(image, content);
         giftGrid.append(card);
     });
