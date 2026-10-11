@@ -9,11 +9,11 @@
     }
 
     main {
-        width: min(100% - 3, 1000px);
+        width: min(100% - 3rem, 1000px);
     }
 
     .hero {
-        padding: 2.5rem auto;
+        padding: 0;
     }
 
     .hero-image img {

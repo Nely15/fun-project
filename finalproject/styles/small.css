@@ -58,11 +58,12 @@ header {
 }
 
 .header-content {
-    display: flex;;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
     padding: 1rem;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -84,6 +85,28 @@ header {
 
 .navigation {
     display: none;
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.navigation.open a {
+    padding: 0.75rem;
+    color: var(--ivory);
+    text-decoration: none;
+    font-weight: 600;
+    border-top: 1px solid rgb(255 249 245 / 20%);
+}
+
+.navigation.open a:hover,
+.navigation.open a:focus-visible,
+.navigation.open .active {
+    color: var(--gold);
 }
 
 /* Main */
@@ -353,4 +376,84 @@ footer p {
     margin-top: 1rem;
     text-align: center;
     font-weight: 600;
+}
+
+/*Personalized  Gift request form */
+
+.gift-request {
+    margin: 2rem 0;
+    padding: 1.25rem;
+    background-color: var(--white);
+    border: 1px solid var(--gold);
+    border-radius: 0.35rem;
+}
+
+.gift-request h2 {
+    margin-bottom: 0.5rem;
+}
+
+.gift-request form {
+    display: grid;
+    gap: 1rem;
+}
+
+.form-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.gift-request label {
+    display: grid;
+    gap: 0.4rem;
+    font-weight: 600;
+}
+
+.gift-request input,
+.gift-request select,
+.gift-request textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 0.75rem;
+    border: 1px solid var(--plum);
+    border-radius: 0.35rem;
+    background-color: var(--ivory);
+    color: var(--plum);
+    font: inherit;
+}
+
+.gift-request textarea {
+    resize: vertical;
+}
+
+.gift-request input:focus-visible,
+.gift-request select:focus-visible,
+.gift-request textarea:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
+}
+
+.gift-request button {
+    justify-content: start;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 641px) {
+    .gift-request {
+        padding: 2rem;
+    }
+
+    .form-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+}
+
+#request-summary dt {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+#request-summary dd {
+    margin: 0.25rem 0 0;
+    overflow-wrap: anywhere;
 }

@@ -13,17 +13,9 @@
 
     <meta name="author" content="Blanca Ruiz">
 
-    <link rel="stylesheet" href="styles/small.css">
-    <link
-        rel="stylesheet"
-        href="styles/medium.css"
-        media="screen and (min-width: 641px)"
-    >
-    <link
-        rel="stylesheet"
-        href="styles/large.css"
-        media="screen and (min-width: 1025px)"
-    >
+     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css" media="screen and (min-width: 641px)">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1025px)">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +24,9 @@
         rel="stylesheet"
     >
 
+    <script type="module" src="scripts/navigation.js"></script>
     <script type="module" src="scripts/gifts.js"></script>
+    
 </head>
 
 <body>
@@ -40,9 +34,7 @@
 <header>
     <div class="header-content">
 
-        <a href="index.html" class="logo">
-            Signature Gift Experts
-        </a>
+        <a href="index.html" class="logo">Signature Gift Experts</a>
 
         <button
             class="menu-button"
@@ -55,7 +47,7 @@
         <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="gifts.html" class="active">Gift Ideas</a>
-            <a href="find.html">Find a Gift</a>
+            <a href="find.html">Request a Personalized Gift Idea</a>
         </nav>
 
     </div>
@@ -146,10 +138,58 @@
 
     </section>
 
+    <dialog id="gift-dialog" aria-labelledby="gift-dialog-title">
+
+        <div class="dialog-content">
+
+            <button
+
+                type="button"
+                id="close-gift-dialog"
+                class="dialog-close"
+                aria-label="Close gift details">
+            
+            >
+        
+                &time;
+            
+            </button>
+
+            <img id="dialog-gift-image" src="" alt="">
+
+            <h2 id="gift-dialog-title">Gift Details</h2>
+
+            <p id="gift-dialog-description"></p>
+
+            <dl class="gif-details-list">
+
+                <dt>Recipient</dt>
+                <dd id="dialog-gift-recipient"></dd>
+
+                <dt>Occasion</dt>
+                <dd id="dialog-gift-occasion"></dd>
+
+                <dt>Category</dt>
+                <dd id="dialog-gift-category"></dd>
+
+                <dt>Price</dt>
+                <dd id="dialog-gift-price"></dd>
+
+            </dl>
+
+            <a href="find.html" class="button">Get Personalized Help</a>
+        
+        </div>
+   
+    </dialog>
+
 </main>
 
 <footer>
-    <p>&copy; 2026 Signature Gift Experts</p>
+
+    <p>&copy; <span id="currentyear"></span>Signature Gift Experts | WDD 231 Final Project | Blanca Ruiz</p>
+    <p id="lastModified"></p>
+
 </footer>
 
 </body>
