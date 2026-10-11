@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "name": "Cozy Host Gift Set",
+        "occasion": "Housewarming",
+        "recipient": "Host",
+        "price": 48,
+        "category": "Home",
+        "description": "A welcoming collection of cozy home essentials for someone settling into a new space.",
+        "image": "images/cozy-host-gift.webp"
+    },
+    {
+        "id": 2,
+        "name": "Personalized Keepsake Box",
+        "occasion": "Birthday",
+        "recipient": "Friend",
+        "price": 38,
+        "category": "Personalized",
+        "description": "A thoughtful keepsake box designed to hold photographs, notes, and meaningful memories.",
+        "image": "images/personalized-keepsake.webp"
+    },
+    {
+        "id": 3,
+        "name": "Weekend Experience Kit",
+        "occasion": "Anniversary",
+        "recipient": "Couple",
+        "price": 120,
+        "category": "Experience",
+        "description": "A curated experience-inspired gift for couples who would rather make memories together.",
+        "image": "images/weekend-experience.webp"
+    },
+    {
+        "id": 4,
+        "name": "Relaxation Gift Basket",
+        "occasion": "Self Care",
+        "recipient": "Woman",
+        "price": 55,
+        "category": "Wellness",
+        "description": "A calming collection of relaxing treats for someone who deserves a little time for herself.",
+        "image": "images/relaxation-basket.webp"
+    },
+    {
+        "id": 5,
+        "name": "Graduation Celebration Set",
+        "occasion": "Graduation",
+        "recipient": "Graduate",
+        "price": 65,
+        "category": "Celebration",
+        "description": "A cheerful graduation gift set to celebrate an important accomplishment and new beginning.",
+        "image": "images/graduation-set.webp"
+    },
+    {
+        "id": 6,
+        "name": "Hot Chocolate Lover Collection",
+        "occasion": "Birthday",
+        "recipient": "Coffee Lover",
+        "price": 42,
+        "category": "Food & Drink",
+        "description": "A cozy collection for hot chocolate lovers who enjoy turning their daily cup into a special moment.",
+        "image": "images/hot-chocolate-collection.webp"
+    },
+    {
+        "id": 7,
+        "name": "Thoughtful Teacher Gift",
+        "occasion": "Thank You",
+        "recipient": "Teacher",
+        "price": 32,
+        "category": "Appreciation",
+        "description": "A simple and meaningful way to thank a teacher for their time, patience, and dedication.",
+        "image": "images/teacher-gift.webp"
+    },
+    {
+        "id": 8,
+        "name": "New Baby Welcome Set",
+        "occasion": "New Baby",
+        "recipient": "New Parent",
+        "price": 58,
+        "category": "Family",
+        "description": "A sweet welcome gift for new parents celebrating the arrival of their little one.",
+        "image": "images/new-baby-set.webp"
+    },
+    {
+        "id": 9,
+        "name": "Elegant Birthday Box",
+        "occasion": "Birthday",
+        "recipient": "Woman",
+        "price": 72,
+        "category": "Celebration",
+        "description": "An elegant birthday collection designed to make her celebration feel especially personal.",
+        "image": "images/elegant-birthday-box.webp"
+    },
+    {
+        "id": 10,
+        "name": "Adventure Ready Set",
+        "occasion": "Birthday",
+        "recipient": "Traveler",
+        "price": 85,
+        "category": "Travel",
+        "description": "A practical and stylish gift collection for someone who is always ready for the next adventure.",
+        "image": "images/adventure-set.webp"
+    },
+    {
+        "id": 11,
+        "name": "Office Appreciation Gift",
+        "occasion": "Thank You",
+        "recipient": "Coworker",
+        "price": 35,
+        "category": "Appreciation",
+        "description": "A polished appreciation gift for a coworker who deserves a thoughtful thank-you.",
+        "image": "images/office-appreciation.webp"
+    },
+    {
+        "id": 12,
+        "name": "Date Night Experience",
+        "occasion": "Anniversary",
+        "recipient": "Couple",
+        "price": 95,
+        "category": "Experience",
+        "description": "A fun date-night inspired gift for couples looking for something memorable to enjoy together.",
+        "image": "images/date-night.webp"
+    },
+    {
+        "id": 13,
+        "name": "Best Friend Memory Set",
+        "occasion": "Birthday",
+        "recipient": "Friend",
+        "price": 50,
+        "category": "Personalized",
+        "description": "A meaningful collection created to celebrate friendship and favorite memories.",
+        "image": "images/friend-memory-set.webp"
+    },
+    {
+        "id": 14,
+        "name": "Holiday Host Collection",
+        "occasion": "Holiday",
+        "recipient": "Host",
+        "price": 68,
+        "category": "Home",
+        "description": "A festive collection for the person who makes every holiday gathering feel special.",
+        "image": "images/holiday-host.webp"
+    },
+    {
+        "id": 15,
+        "name": "Milestone Celebration Box",
+        "occasion": "Celebration",
+        "recipient": "Family",
+        "price": 90,
+        "category": "Celebration",
+        "description": "A special gift box for celebrating meaningful family milestones and achievements.",
+        "image": "images/milestone-box.webp"
+    }
+]

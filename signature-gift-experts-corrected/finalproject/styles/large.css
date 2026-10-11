@@ -1,0 +1,68 @@
+@media screen and (min-width: 1025px) {
+    
+    .header-content {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        width: auto;
+        padding-top: 0;
+    }
+
+    .navigation a {
+        padding: 0.5rem;
+        color: var(--ivory);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .navigation a:hover,
+    .navigation a:focus-visible,
+    .navigation .active {
+        color: var(--gold);
+    }
+
+    main {
+        width: min(100% - 4rem, 1000px);
+    }
+
+    .hero {
+        margin: 3rem auto;
+    }
+
+    .hero-image img {
+        min-height: 400px;
+        aspect-ratio: 16 / 7;
+    }
+
+    .hero-content {
+        left: 10%;
+        right: 10%;
+        bottom: 10%;
+        padding: 1.5rem 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2.75rem, 4vw, 4rem);
+    }
+
+    .hero-content p{
+        max-width: 650px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .gift-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gift Ideas | Signature Gift Experts</title>
+
+    <meta
+        name="description"
+        content="Explore thoughtful gift ideas from Signature Gift Experts for birthdays, anniversaries, graduations, holidays, and more."
+    >
+
+    <meta name="author" content="Blanca Ruiz">
+    <meta property="og:title" content="Gift Ideas | Signature Gift Experts">
+    <meta property="og:description" content="Explore curated gift ideas by occasion, recipient, and budget.">
+    <meta property="og:type" content="website">
+
+     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css" media="screen and (min-width: 641px)">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1025px)">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="icon" href="favicon.ico">
+    
+    <script type="module" src="scripts/navigation.js"></script>
+    <script type="module" src="scripts/gifts.js"></script>
+    
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header>
+    <div class="header-content">
+
+        <a href="index.html" class="logo">Signature Gift Experts</a>
+
+        <button
+            class="menu-button"
+            aria-label="Open navigation menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+        >
+            ☰
+        </button>
+
+        <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="gifts.html">Gift Ideas</a>
+            <a href="find.html">Request a Personalized Gift Idea</a>
+        </nav>
+
+    </div>
+</header>
+
+<main id="main-content">
+
+    <section class="page-intro">
+        <h1>Gift Ideas</h1>
+
+        <p>
+            Find something meaningful without the guesswork.
+            Explore our curated gift ideas by occasion, recipient, and budget.
+        </p>
+    </section>
+
+    <section class="gift-filters">
+
+        <h2>Find Your Gift</h2>
+
+        <div class="filter-controls">
+
+            <label for="occasion-filter">
+                Occasion
+                <select id="occasion-filter">
+                    <option value="all">All Occasions</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Anniversary">Anniversary</option>
+                    <option value="Graduation">Graduation</option>
+                    <option value="Thank You">Thank You</option>
+                    <option value="Holiday">Holiday</option>
+                    <option value="Housewarming">Housewarming</option>
+                    <option value="Self Care">Self Care</option>
+                    <option value="New Baby">New Baby</option>
+                    <option value="Celebration">Celebration</option>
+                </select>
+            </label>
+
+            <label for="recipient-filter">
+                Recipient
+                <select id="recipient-filter">
+                    <option value="all">Everyone</option>
+                    <option value="Friend">Friend</option>
+                    <option value="Couple">Couple</option>
+                    <option value="Woman">Woman</option>
+                    <option value="Graduate">Graduate</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="New Parent">New Parent</option>
+                    <option value="Traveler">Traveler</option>
+                    <option value="Coworker">Coworker</option>
+                    <option value="Host">Host</option>
+                    <option value="Family">Family</option>
+                    <option value="Coffee Lover">Coffee Lover</option>
+                </select>
+            </label>
+
+            <label for="budget-filter">
+                Budget
+                <select id="budget-filter">
+                    <option value="all">Any Budget</option>
+                    <option value="50">Under $50</option>
+                    <option value="75">Under $75</option>
+                    <option value="100">Under $100</option>
+                    <option value="150">Under $150</option>
+                </select>
+            </label>
+
+        </div>
+
+        <button type="button" id="clear-filters" class="button">
+            Clear Filters
+        </button>
+
+    </section>
+
+    <section class="featured">
+
+        <div class="section-heading">
+            <h2>Our Gift Ideas</h2>
+            <p id="gift-count">Loading gift ideas...</p>
+        </div>
+
+        <div id="gift-grid" class="gift-grid">
+            <!-- Gift cards are created by JavaScript -->
+        </div>
+
+        <p id="gift-message" class="gift-message"></p>
+
+    </section>
+
+    <dialog id="gift-dialog" aria-labelledby="gift-dialog-title">
+        <div class="dialog-content">
+            <button type="button" id="close-gift-dialog" class="dialog-close" aria-label="Close gift details">×</button>
+            <img id="dialog-gift-image" src="" alt="" width="400" height="300">
+            <h2 id="gift-dialog-title">Gift Details</h2>
+            <p id="dialog-gift-description"></p>
+            <dl class="gift-details-list">
+                <dt>Recipient</dt>
+                <dd id="dialog-gift-recipient"></dd>
+                <dt>Occasion</dt>
+                <dd id="dialog-gift-occasion"></dd>
+                <dt>Category</dt>
+                <dd id="dialog-gift-category"></dd>
+                <dt>Price</dt>
+                <dd id="dialog-gift-price"></dd>
+            </dl>
+            <a href="find.html" class="button">Get Personalized Help</a>
+        </div>
+    </dialog>
+
+</main>
+
+<footer>
+
+    <p>&copy; <span id="currentyear"></span>Signature Gift Experts | WDD 231 Final Project | Blanca Ruiz</p>
+    <p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>

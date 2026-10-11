@@ -12,8 +12,11 @@
     >
 
     <meta name="author" content="Blanca Ruiz">
-
-     <link rel="stylesheet" href="styles/small.css">
+    <meta property="og:title" content="Gift Ideas | Signature Gift Experts">
+    <meta property="og:description" content="Explore curated gift ideas by occasion, recipient, and budget.">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css" media="screen and (min-width: 641px)">
     <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1025px)">
 
@@ -33,6 +36,8 @@
 
 <body>
 
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
 <header>
     <div class="header-content">
 
@@ -41,7 +46,9 @@
         <button
             class="menu-button"
             aria-label="Open navigation menu"
+            type="button"
             aria-expanded="false"
+            aria-controls="primary-navigation"
         >
             ☰
         </button>
@@ -55,7 +62,7 @@
     </div>
 </header>
 
-<main>
+<main id="main-content">
 
     <section class="page-intro">
         <h1>Gift Ideas</h1>
@@ -141,48 +148,23 @@
     </section>
 
     <dialog id="gift-dialog" aria-labelledby="gift-dialog-title">
-
         <div class="dialog-content">
-
-            <button
-
-                type="button"
-                id="close-gift-dialog"
-                class="dialog-close"
-                aria-label="Close gift details">
-            
-            >
-        
-                &time;
-            
-            </button>
-
-            <img id="dialog-gift-image" src="" alt="">
-
+            <button type="button" id="close-gift-dialog" class="dialog-close" aria-label="Close gift details">×</button>
+            <img id="dialog-gift-image" src="" alt="" width="400" height="300">
             <h2 id="gift-dialog-title">Gift Details</h2>
-
-            <p id="gift-dialog-description"></p>
-
-            <dl class="gif-details-list">
-
+            <p id="dialog-gift-description"></p>
+            <dl class="gift-details-list">
                 <dt>Recipient</dt>
                 <dd id="dialog-gift-recipient"></dd>
-
                 <dt>Occasion</dt>
                 <dd id="dialog-gift-occasion"></dd>
-
                 <dt>Category</dt>
                 <dd id="dialog-gift-category"></dd>
-
                 <dt>Price</dt>
                 <dd id="dialog-gift-price"></dd>
-
             </dl>
-
             <a href="find.html" class="button">Get Personalized Help</a>
-        
-        </div>
-   
+        </div>   
     </dialog>
 
 </main>
